@@ -1,399 +1,203 @@
-# WindTerm
-A Quicker and better SSH/Telnet/Serial/Shell/Sftp client for DevOps.
-
-_Hello WindTerm :rose:, hello world!_
-
-**We're just beginning! If you want a high performance text editor, you can try [WindEdit](https://www.github.com/kingToolbox/WindEdit/).**
-
-# License
-**Completely FREE for commercial and non-commercial use without limitations.**
-**All released source codes (except thirdparty directory) are provided under the terms of Apache-2.0 license.**
-
-# Introduction
-
-See [Intro Videos](https://kingtoolbox.github.io)
-
-# Download
-
-**Linux binary**, **MacOS binary** and **Windows binary**: https://github.com/kingToolbox/WindTerm/releases
-
-# Source Code
-
-WindTerm is a **partial** open source project, and the source will be gradually opened.
-
-Open source code includes, but is not limited to, the classes that can be used independently, such as functional, algorithms, gui widgets, etc., as well as functional libraries, such as network, protocols, etc., as well as all types that require open source according to the license.
-
-# Issues and feature requests
-
-Any issues and feature requests are welcome.
-
-Please click [issues](https://github.com/kingToolbox/WindTerm/issues) to commit an issue or a feature request.
-
-Please click [Discussion](https://github.com/kingToolbox/WindTerm/discussions) to discuss anything about SSH, SFtp, Shell(Linux shell, Windows cmd and powershell), Telnet, Serial and WindTerm.
-
-# Screenshots
-
-Main Window (zsh):
-
-![MainWindow](https://github.com/kingToolbox/WindTerm/blob/master/images/screenshots/WindTerm.png)
-
-Split views:
-
-![SplitView](https://github.com/kingToolbox/WindTerm/blob/master/images/screenshots/SplitView.png)
-
-DigeWhite Theme:
-
-![DigeWhite Theme](https://github.com/kingToolbox/WindTerm/blob/master/images/screenshots/WindTerm_DigeWhite_Theme.png)
-
-# Features
-
-### SSH, Telnet, Tcp, Shell, Serial, Tmux
-- SSH v2, Telnet, Raw Tcp, Serial, Shell protocols implemented. [Intro Video](https://kingtoolbox.github.io/2020/01/22/new-session/)
-- Supports SSH auto execution when session authenticated.
-- Supports SSH ControlMaster.
-- Supports SSH ProxyCommand or ProxyJump. [Intro Video](https://kingtoolbox.github.io/2021/03/11/proxycommand/)
-- Supports SSH agent. [Intro Video](https://kingtoolbox.github.io/2020/08/22/ssh_agent/)
-- Supports SSH agent forwarding.
-- Supports SSH auto login with password, public-key, keyboard-interactive, gssapi-with-mic. [Intro Video](https://kingtoolbox.github.io/2020/01/23/auto-login/)
-- Supports X11 forwarding. [Intro Video](https://kingtoolbox.github.io/2020/07/21/x11_forwarding/)
-- Supports direct/local port forwarding, reverse/remote port forwarding and dynamic port forwarding. [Intro Video](https://kingtoolbox.github.io/2020/07/21/port_forwarding/)
-- Supports XModem, YModem and ZModem. [Intro Video](https://kingtoolbox.github.io/tags/modem/)
-- Integrated sftp, scp client, supports download, upload, remove, rename, make new file/directory and so on. [Intro Video](https://kingtoolbox.github.io/tags/transfer/)
-- Integrated local file manager, supports move to, copy to, copy from, remove, rename, make new file/directory and so on.
-- Supports Windows Cmd, PowerShell and Cmd, PowerShell as administrator.
-- Supports Linux bash, zsh, powershell core and so on.
-- Supports MacOS bash, zsh, powershell core and so on.
-- **Supports `tmux integration`**. [Intro Video](https://kingtoolbox.github.io/2025/01/05/tmux-integration/)
-### GUI
-- **Supports Windows, MacOS and Linux.**
-- **Supports Multilingual User Interface.**
-- Supports Unicode 13.
-- Session dialog and session tree. [Intro Video](https://kingtoolbox.github.io/2020/01/22/manage-sessions/)
-- **Auto Completion.** [Intro Video](https://kingtoolbox.github.io/tags/auto-completion/)
-- **Free Type Mode.** [Intro Video](https://kingtoolbox.github.io/2022/04/12/free_type_mode/)
-- **Focus Mode.** [Intro Video](https://kingtoolbox.github.io/2021/06/28/ui_focus_mode/)
-- **Sync Input.** [Intro Video](https://kingtoolbox.github.io/2021/05/27/sync-input/)
-- **Enhanced protection of the session username and password.** [Intro Video](https://kingtoolbox.github.io/2021/03/11/protection-username-password/)
-- **Command palette.** [Intro Video](https://kingtoolbox.github.io/tags/command-palette/)
-- **Command sender.** [Intro Video](https://kingtoolbox.github.io/tags/sender/)
-- **Explorer Pane.** [Intro Video](https://kingtoolbox.github.io/2021/05/27/explorer/)
-- **Shell Pane.**
-- **Quick Bar.** [Intro Video](https://kingtoolbox.github.io/2020/08/22/quickbar/)
-- **Paste Dialog.** [Intro Video](https://kingtoolbox.github.io/2020/08/22/paste_dialog/)
-- **Local and remote modes with vim keybindings. (Using Shift+Enter key to switch between remote and local mode**) [Intro Video](https://kingtoolbox.github.io/2020/06/21/keyboard-modes/)
-- Supports time stamp, folding, outlining, split views.
-- **Supports powerline in Linux and PowerShell, e.g. Oh-My-Zsh, Oh-My-Posh.** [Intro Image](https://github.com/kingToolbox/WindTerm#screenshots)
-- Supports color schemes like vscode. [Intro Video](https://kingtoolbox.github.io/2020/01/23/highlight/)
-- Supports searching and previewing. [Intro Video](https://kingtoolbox.github.io/2020/01/22/search-and-mark/)
-- Supports highlighting the opening and closing delimiter, such as (), [], {} and the customed delimiters. [Intro Video](https://kingtoolbox.github.io/2020/06/28/pair/)
-- Supports changing the UI theme. [Intro Video](https://kingtoolbox.github.io/2020/09/18/theme/)
-- Supports setting the tab color. [Intro Video](https://kingtoolbox.github.io/2020/09/18/tabbar-change-tabcolor/)
-- Supports searching over the opened tabs. [Intro Video](https://kingtoolbox.github.io/2021/03/11/tabbar-search-tab/)
-- Supports closing tabs to the right.
-- Supports setting the windows transparency. [Intro video](https://kingtoolbox.github.io/2020/11/13/windows-opacity/)
-- Supports select-to-copy, right-click-to-paste or middle-click-to-paste.
-- Supports searching text online with Google, Bing, Github, Stackoverflow, Wikipedia and DuckDuckGo. [Intro video](https://kingtoolbox.github.io/2020/11/13/search-online/)
-- Supports hiding mouse cursor while typing.
-- **Supports locking screen.** [Intro video](https://kingtoolbox.github.io/2021/04/23/lock-screen/)
-### Term
-- Supports vt100, vt220, vt340, vt420, vt520, xterm, xterm-256-colors.
-- Supports unicode, emojis, true-color, mouse protocol, etc.
-- Supports auto wrap mode. [Intro Video](https://kingtoolbox.github.io/2020/01/22/auto-wrap/)
-- Protocols and terms can be customed.
-- All vttest tests have passed except Tektronix 4014.
-### Session
-- **Supports HTTP and SOCKS5 proxy.** [Intro Video](https://kingtoolbox.github.io/2021/03/11/proxy-http-socks5/)
-- **Supports Jump Server proxy.** [Intro Video](https://kingtoolbox.github.io/2021/03/11/proxy-jump-server/)
-- Supports manual and automated session logging. [Intro Video](https://kingtoolbox.github.io/tags/logging/)
-- Rename and duplicate session. [Intro Video](https://kingtoolbox.github.io/tags/tabbar/)
-- Restore last sessions and layouts when restart. [Intro Video](https://kingtoolbox.github.io/2020/01/22/restore-sessions/)
-- Supports opening a specific session or set of sessions on startup.
-### Performance
-- Dynamic memory compression, typically `20%` to `90%` of the working memory load can be reduced.
-- High performance, low memory, low latency. [Intro Video](https://kingtoolbox.github.io/2020/01/23/windterm-putty-performance/)
+# WindTermPro
 
-# Sftp Performance
+面向开发者与运维人员的跨平台终端项目，支持 SSH、SFTP、SCP、Telnet、TCP、串口和本地 Shell，并提供 tmux 集成、会话管理、文件传输与多窗口分屏等功能。
 
-The hardware used for generating the data in these benchmarks was
+本仓库派生自 [kingToolbox/WindTerm](https://github.com/kingToolbox/WindTerm)。下文介绍的是上游 WindTerm 已公开说明的功能，具体可用功能以所使用的发行版本为准。
 
-    windows 10 - 2.3 GHz Intel Core i5 and 8GB memory.
+## 目录
 
-**WindTerm1.72, WindTerm 1.2, FileZilla 3.48.1, WinSCP 5.17.2 (Build 10278)** tests are performed on WSL(Ubuntu 18.04.2). 
+- [项目简介](#项目简介)
+- [下载与入门](#下载与入门)
+- [界面预览](#界面预览)
+- [主要功能](#主要功能)
+- [源码说明](#源码说明)
+- [性能与基准测试](#性能与基准测试)
+- [文档与快捷键](#文档与快捷键)
+- [问题反馈与交流](#问题反馈与交流)
+- [开发计划](#开发计划)
+- [许可证](#许可证)
+- [致谢](#致谢)
 
-The version of clients:
+## 项目简介
 
-| Application | Version | Release Date |
-| --- | --- | --- |
-| windterm | v1.72 | 2020-10-25 |
-| windterm | v1.2 | 2020-06-15 |
-| FileZilla | v3.48.1 | 2020-05-19 |
-| WinScp | v5.17.2 (Build 10278) | 2020-03-09 |
+WindTerm 将远程连接、本地终端、文件管理和会话组织整合在同一界面中，适用于日常开发、服务器管理、远程文件传输和串口调试。
 
-**All test data is for reference only.**
+- **跨平台**：支持 Windows、macOS 和 Linux。
+- **多种连接方式**：支持 SSH v2、Telnet、原始 TCP、串口及本地 Shell。
+- **终端与文件传输一体化**：内置 SFTP、SCP 客户端和本地文件管理器。
+- **高效操作**：提供自动补全、同步输入、命令面板、快捷栏和分屏视图。
+- **会话管理**：支持会话树、代理、跳板机、日志记录及布局恢复。
+- **多语言界面**：支持包括简体中文在内的多种界面语言。
 
-### 5GB huge file (5,154,830 KB), generated by random data
+## 下载与入门
 
-| | Download Time | Download Rate | Upload Time | Upload Rate |
-| --- | --- | --- | --- | --- |
-| WindTerm 1.72 (Use high speed transfer) | **23s** | **216.3 MB/s** | **20s** | **247.0 MB/s** |
-| WindTerm 1.72 | **23s** | **214.7 MB/s** | **20s** | **244.0 MB/s** |
-| WindTerm 1.2 | 37s | 139.3 MB/s | 43s | 119.9 MB/s |
-| FileZilla | 32s | 161.1 MB/s | 30s | 171.8 MB/s |
-| WinSCP | 81s | 63.7 MB/s | 91s | 56.7 MB/s |
+### 下载
 
-### 4400 files, 16 folders (107,042 KB), unzipped from [vim-7.4.1049.zip](https://github.com/vim/vim/archive/v7.4.1049.zip)
+Windows、macOS 和 Linux 的 WindTerm 二进制程序请从[上游发行页面](https://github.com/kingToolbox/WindTerm/releases)获取，选择与操作系统和处理器架构匹配的安装包或压缩包，并参考对应版本的发行说明。
 
-| | Download Time | Download Rate | Upload Time | Upload Rate |
-| --- | --- | --- | --- | --- |
-| WindTerm 1.7 | **26s** | **3.9 MB/s** | 13s | 8.1 MB/s |
-| WindTerm 1.2 | 32s | 3.4 MB/s | **10s** | **10.7 MB/s** |
-| FileZilla | 48s | 2.2 MB/s | 35s | 3.1 MB/s |
-| WinSCP | 42s | 2.6 MB/s | 12s | 8.9 MB/s |
+**该链接提供的是上游 WindTerm 发行包。** 本仓库中的部分源码不能直接视为完整的 WindTermPro 安装包。
 
-# Terminal Performance
-
-The hardware used for generating the data in these benchmarks was
-
-    windows 10 - 2.3 GHz Intel Core i5 and 8GB memory.
-    MacOs 10.13 - 2.3 GHz Intel Core i5 and 8GB memory.
-
-**WindTerm 1.72, rxvt, putty, xterm, Windows Terminal** tests are performed on WSL(Ubuntu 18.04.2). 
-
-**Iterm2, kitty, Alacritty** tests are performed on MacOS shell, 
-
-    For WindTerm: No color scheme used in windterm. Color scheme will result in approximately 2% loss and more memory usage.
-
-    For Alacritty: Only supports up to 100,000 scrollback lines, so every test use "history: 100000" setting and no memory usage measured.
-
-    For Windows Terminal: Only supports up to 65,535 scrollback lines, so every test use "historySize: 65535" setting and no memory usage measured. 
-
-The version of terminals:
-
-| Application | Version | Release Date |
-| --- | --- | --- |
-| windterm | v1.72 | 2020-10-25 |
-| rxvt-unicode | v9.2.2 | 2016-05-14 |
-| putty | v0.71 | 2019-03-16 |
-| xterm | v3.30 | 2017-06-20 |
-| iterm2 | v3.3.6 | 2019-10-09 |
-| alacritty | v0.5.0 | 2020-07-21 |
-| kitty | v0.14.6 | 2019-09-25 |
-| Windows Terminal | v1.3.2651.0 | 2020-09-22 |
-
-**All test data is for reference only.**
-
-## Test Command: "cat ./benchmark_randomdata"
-
-The benchmark_randomdata contains 97.6MB random text (102,401,504 bytes, 1,329,878 lines, generated and tested by [random_test.sh](https://github.com/kingToolbox/WindTerm/blob/master/benchmark/urandom_test.sh))
-
-In all cases, three runs were made to warm system caches. The reported numbers are the median of five runs. 
-
-1. Telnet:
-
-| | Lines of scrollback | Data Rate(MB/sec) | Memory Usage(MB) |
-| --- | --- | --- | --- |
-| WindTerm | unlimited | **52.1** | **106.6** |
-| rxvt | 1,350,000 | 37.8 | 842.2 | 
-| Putty | 1,350,000 | 4.9 | 733.4 |
-| xterm | 1,350,000 | 2.2 | 3328.4 |
-| Windows Terminal + telnet.exe | 65,535 | 0.1 | Not measured, use 65,535 scrollback lines setting |
-
-2. SSH:
-
-| | Lines of scrollback | Data Rate(MB/sec) | Memory Usage(MB) |
-| --- | --- | --- | --- |
-| WindTerm | unlimited | **41.8** | **108.5** |
-| rxvt | 1,350,000 | 40.2 | 842.2 | 
-| Putty | 1,350,000 | 4.8 | 734.9 |
-| xterm | 1,350,000 | 2.3 | 3328.4 |
-| Windows Terminal + ssh.exe | 65,535 | 2.1 | Not measured, use 65,535 scrollback lines setting |
-
-3. Shell:
-
-| | Lines of scrollback | Data Rate(MB/sec) | Memory Usage(MB) |
-| --- | --- | --- | --- |
-| iterm2 | unlimited | - (Take too long time) | more than 1300 |
-| kitty | unlimited | 17.2 | 2655 |
-| Alacritty | 100,000 | 41.3 | - |
-
-## Test command: "time seq 1 n" (n = [1000000, 2000000, 5000000, 10000000], scrollback lines: unlimited)
-
-### n = 1,000,000
-
-| | Time(sec) | Memory Usage(MB) |
-| --- | --- | --- |
-| WindTerm | 1.236 | **16.1** |
-| rxvt | 5.082 | 633.3 |
-| putty | 4.161 | 551.1 |
-| xterm | 40.421 | 2500.7 |
-| iterm2 | 2.116 | 146.3 |
-| Kitty | 2.535 | 2376.5 |
-| Alacritty | **1.162** | Not measured, use 100,000 scrollback lines setting |
-| Windows Terminal + ssh.exe | 23.246 | Not measured, use 65,535 scrollback lines setting |
-
-### n = 2,000,000
-
-| | Time(sec) | Memory Usage(MB) |
-| --- | --- | --- |
-| WindTerm | **2.287** | **24.1** |
-| rxvt | 10.896 | 1266.6 |
-| putty | 16.045 | 1102.6 |
-| xterm | 68.154 | 5005.5 |
-| iterm2 | 4.181 | 383.2 |
-| Kitty | 5.620 | 4749.9 |
-| Alacritty | 2.322 | Not measured, use 100,000 scrollback lines setting |
-| Windows Terminal + ssh.exe | 50.381 | Not measured, use 65,535 scrollback lines setting |
-
-### n = 5,000,000
-
-| | Time(sec) | Memory Usage(MB) |
-| --- | --- | --- |
-| WindTerm | **5.520** | **68.2** |
-| rxvt | 27.533 | 3166.2 |
-| putty | 45.911 | 2757.1 |
-| xterm | - | Out of memory |
-| iterm2 | 10.805 | 1048.3 |
-| Kitty | - | Out of memory |
-| Alacritty | 5.799 | Not measured, use 100,000 scrollback lines setting |
-| Windows Terminal + ssh.exe | 130.371 | Not measured, use 65,535 scrollback lines setting |
+### 基本使用流程
 
-### n = 10,000,000
+1. 下载适合当前系统的发行包，按发行说明安装或解压后启动。
+2. 新建会话，按用途选择 SSH、Telnet、串口或本地 Shell 等类型。
+3. 配置连接地址、端口和认证方式；串口会话则配置对应的串口参数。
+4. 连接成功后，在终端中执行命令；需要传输文件时，可使用内置的文件管理功能。
+5. 根据需要设置会话分组、分屏布局、主题、快捷键和日志记录。
 
-| | Time(sec) | Memory Usage(MB) |
-| --- | --- | --- |
-| WindTerm | **10.674** | **133.3** |
-| rxvt | - | Out of memory |
-| putty | - | Out of memory |
-| xterm | - | Out of memory |
-| iterm2 | 20.468 | 2231.3 |
-| Kitty | - | Out of memory |
-| Alacritty | 11.598 | Not measured, use 100,000 scrollback lines setting |
-| Windows Terminal + ssh.exe | 264.739 | Not measured, use 65,535 scrollback lines setting |
+详细操作可参考[新建会话教程](https://kingtoolbox.github.io/2020/01/22/new-session/)和[会话管理教程](https://kingtoolbox.github.io/2020/01/22/manage-sessions/)。
 
-### n = 10,000,000 scrollback = 30 Lines
-
-| | Time(sec) | Memory Usage(MB) |
-| --- | --- | --- |
-| WindTerm | 10.167 | 0.7 |
-| rxvt | **9.687** | **0.1** |
-| putty | 95.382 | 0.4 |
-| xterm | 286.510 | **0.1** |
-| iterm2 | 25.448 | 7.4 |
-| Kitty | 16.104 | 0.5 |
-| Alacritty | 11.798 | Not measured, use zero scrollback lines setting |
-| Windows Terminal + ssh.exe | 261.096 | Not measured, use zero scrollback lines setting |
-
-# Linux Terminal Performance
-
-The hardware used for generating the data in these benchmarks was
-
-    Debian 10 Vm - 4cpu and 4GB memory.
-
-    For WindTerm: No color scheme used in windterm. Color scheme will result in approximately 2% loss and more memory usage.
-
-    For other terminals: No memory usage measured because most of them write the history to disk or only support a limited number of lines in memory..
-
-The version of terminals:
-
-| Application | Version | Release Date |
-| --- | --- | --- |
-| Windterm | v1.9 | 2020-12-22 |
-| Gnome | v3.30.2 | 2018-10-22 |
-| Mate Terminal | v1.20.2 | 2019-02-11 |
-| Konsole | v18.04.0 | 2019-04-12 |
-| Xfce4 Terminal | v0.8.7.4 | 2018-5-15 |
-| QTerminal | v0.14.1 | 2019-01-26 |
-
-**All test data is for reference only.**
-
-## Test Command: "cat ./benchmark_randomdata"
-
-The benchmark_randomdata contains 97.6MB random text (102,401,504 bytes, 1,329,878 lines, generated and tested by [random_test.sh](https://github.com/kingToolbox/WindTerm/blob/master/benchmark/urandom_test.sh))
-
-In all cases, three runs were made to warm system caches. The reported numbers are the median of five runs. 
-
-| | Cost Time |
-| --- | --- |
-| WindTerm | **1.976s** |
-| Gnome Terminal  | 9.781s |
-| Mate Terminal  | 9.841s |
-| Konsole | 25.050s |
-| xfce4 Terminal | 10.520s |
-| QTerminal | 20.763s |
-
-## Test command: "time seq 1 n" (n = [1000000, 2000000, 5000000, 10000000], scrollback lines: unlimited)
-
-| n | 1,000,000 | 2,000,000 | 5,000,000 | 10,000,000 | 10,000,000<br>(scrollback lines: 100) |
-| --- | --- | --- | --- | --- | --- |
-| WindTerm | 0.846s (18.6MB) | **1.574s** (26.6MB) | **4.046s** (56.4MB) | **8.232s** (102.2MB) | **7.748s** (3.4MB) | 
-| Gnome Terminal  | 0.920s | 2.152s | 5.271s | 11.111s | 13.109s |
-| Mate Terminal  | **0.822s** | 1.698s | 5.943s | 10.920s | 12.290s |
-| Konsole | 1.612s | 3.199s | 8.157s | 16.029s | 15.650s |
-| xfce4 Terminal | 0.870s | 2.160s | 5.866s | 12.089s | 13.304s |
-| QTerminal | 9.272s | 18.391s | 45.999s | 104.277s | 17.208s |
-
-# Latency
-
-Considering the network influence on the latency, the following data is from [WindEdit](https://github.com/kingToolbox/digedit).
-DIGEdit is the text component of WindTerm.
-
-|   | Min | Max | Avg | SD |
-| --- | --- | --- | --- | --- |
-|WindEdit| 1.9 | 7.6 | 2.9 | 0.8 |
-|Windows Notepad | 0.9 | 16.5 | 7.8 | 1.8 |
-|GVim | 0.9 | 10.4 | 2.8 | 1.2 |
-
-# Shortcuts
-
-[Shortcut Keys List](https://kingtoolbox.github.io/tags/keyboard/)
-
-# Roadmap
-
-**Release cycle:**
-
-  2-3 months.
-  
-**Prerelease cycle:**
-
-  4~6 weeks
-
-# Roadmap of v2.7 (February 2025, for reference only)
-- **Resolve issues as much as possible**
-- SSH Agent Forwaring
-- Tmux integration
-- Command Snippet [Description](https://github.com/kingToolbox/WindTerm/issues/239#issuecomment-951934488)  (Postponed to a later version )
-- SSH GSSAPI Authentication (Postponed to a later version )
-- Search in sessions (Postponed to a later version )
-
-Download: [WindTerm 2.7.0 Prerelease 3](https://github.com/kingToolbox/WindTerm/releases/tag/2.7-prerelease-3) (2025-2-10)
-
-**Roadmap of version 2.x:**
-- External tools
-- Protocols:
-  - Mosh
-  - Rlogin
-- Session:
-  - Auto Complete
-  - Chat mode
-  - Log viewer
-- File transfer:
-  - ftp, ftps
-- Script, macro and plugin stystem
-- More ...
-
-**Release Schedule:**
-Version | Level | Target | Status | Timeline
------------- | ------------- | -------------- | ---------- | -----------
-v0.x | Basic | Basic framework and basic features, but complete a high-performance text editor ([WindEdit](https://github.com/kingToolbox/WindEdit))  as the base, and be able to use them normally.  | Finished | Long long ago ~ Sprint of 2020
-v1.x | Manual | Perfect features and can be used by most developers in their daily work | Finished | Spring of 2020 ~ Winter of 2020 
-**v2.x** | **Semi automatic** | **Through triggers, macros, events, notifications and so on, developers can be assisted to complete some operations.** | **Developing** | **Spring of 2021 ~ Summer of 2022**
-v3.x | Fully automatic | Through plugins, scripts, machine learning and so on, automatically operating with achieving non-attended | Planning | Summer of 2022 ~ Winter of 2023
-
-# Acknowledgement
-|            | Contribution  |
-| ---------- | ------------- |
-| [EvoWebFrance](https://github.com/EvoWebFrance) | French translation |
-| [kvnklk](https://github.com/kvnklk) | German translation |
-| [Lemonawa](https://github.com/Lemonawa) | Simplified Chinese translation |
-| [LuxNegra](https://github.com/LuxNegra) | French translation |
-| [MosamXu](https://github.com/MosamXu) | Simplified Chinese translation |
+## 界面预览
+
+### 主界面（zsh）
+
+![WindTerm 主界面](images/screenshots/WindTerm.png)
+
+### 分屏视图
+
+![WindTerm 分屏视图](images/screenshots/SplitView.png)
+
+### DigeWhite 浅色主题
+
+![WindTerm DigeWhite 浅色主题](images/screenshots/WindTerm_DigeWhite_Theme.png)
+
+## 主要功能
+
+### 连接与认证
+
+- 支持 SSH v2、Telnet、原始 TCP、串口和本地 Shell。
+- 支持 SSH 认证成功后自动执行命令，以及 SSH ControlMaster。
+- 支持 [ProxyCommand 和 ProxyJump](https://kingtoolbox.github.io/2021/03/11/proxycommand/)。
+- 支持 [SSH Agent](https://kingtoolbox.github.io/2020/08/22/ssh_agent/) 及 Agent 转发。
+- 支持密码、公钥、键盘交互等 SSH 自动登录方式，详见[自动登录教程](https://kingtoolbox.github.io/2020/01/23/auto-login/)。
+- 支持 [X11 转发](https://kingtoolbox.github.io/2020/07/21/x11_forwarding/)。
+- 支持[本地、远程和动态端口转发](https://kingtoolbox.github.io/2020/07/21/port_forwarding/)。
+- 支持 [HTTP、SOCKS5 代理](https://kingtoolbox.github.io/2021/03/11/proxy-http-socks5/)和[跳板机代理](https://kingtoolbox.github.io/2021/03/11/proxy-jump-server/)。
+- 支持 [tmux 集成](https://kingtoolbox.github.io/2025/01/05/tmux-integration/)。
+
+### 文件传输与管理
+
+- 内置 SFTP、SCP 客户端，支持上传、下载、删除、重命名及新建文件或目录等操作。
+- 内置本地文件管理器，支持复制、移动、删除、重命名及新建文件或目录等操作。
+- 支持 [XModem、YModem 和 ZModem](https://kingtoolbox.github.io/tags/modem/) 文件传输。
+- 通过[文件传输教程](https://kingtoolbox.github.io/tags/transfer/)了解具体操作。
+
+### 本地 Shell
+
+- Windows：支持 Cmd、PowerShell，以及以管理员身份运行的 Cmd 和 PowerShell。
+- Linux：支持 Bash、Zsh、PowerShell Core 等。
+- macOS：支持 Bash、Zsh、PowerShell Core 等。
+- 支持 Powerline 风格显示，可配合 Oh My Zsh、Oh My Posh 等使用。
+
+### 界面与操作效率
+
+- 支持多语言界面、主题切换、配色方案、标签页颜色和窗口透明度设置。
+- 支持会话对话框、会话树、资源管理器面板和 Shell 面板。
+- 支持[自动补全](https://kingtoolbox.github.io/tags/auto-completion/)、[自由输入模式](https://kingtoolbox.github.io/2022/04/12/free_type_mode/)和[专注模式](https://kingtoolbox.github.io/2021/06/28/ui_focus_mode/)。
+- 支持[同步输入](https://kingtoolbox.github.io/2021/05/27/sync-input/)，方便同时向多个会话发送命令。
+- 支持[命令面板](https://kingtoolbox.github.io/tags/command-palette/)、[命令发送器](https://kingtoolbox.github.io/tags/sender/)和[快捷栏](https://kingtoolbox.github.io/2020/08/22/quickbar/)。
+- 支持[粘贴对话框](https://kingtoolbox.github.io/2020/08/22/paste_dialog/)、选中即复制、右键或中键粘贴。
+- 支持带有 Vim 键位的本地与远程模式，可使用 `Shift+Enter` 切换，详见[键盘模式说明](https://kingtoolbox.github.io/2020/06/21/keyboard-modes/)。
+- 支持时间戳、文本折叠、大纲和分屏视图。
+- 支持[文本搜索与预览](https://kingtoolbox.github.io/2020/01/22/search-and-mark/)，以及括号和自定义分隔符的配对高亮。
+- 支持搜索已打开的标签页，以及关闭右侧标签页。
+- 支持通过 Google、Bing、GitHub、Stack Overflow、Wikipedia 和 DuckDuckGo 在线搜索选中文本。
+- 支持输入时隐藏鼠标指针，以及[锁屏](https://kingtoolbox.github.io/2021/04/23/lock-screen/)功能。
+- 提供[会话用户名与密码保护](https://kingtoolbox.github.io/2021/03/11/protection-username-password/)功能。
+
+### 终端与会话
+
+- 支持 VT100、VT220、VT340、VT420、VT520、xterm 和 xterm-256color 等终端类型。
+- 支持 Unicode、Emoji、真彩色、鼠标协议及自动换行。
+- 支持自定义协议与终端配置。
+- 支持手动和自动[会话日志记录](https://kingtoolbox.github.io/tags/logging/)。
+- 支持重命名、复制会话，以及重启后[恢复会话与布局](https://kingtoolbox.github.io/2020/01/22/restore-sessions/)。
+- 支持启动时打开指定会话或一组会话。
+
+## 源码说明
+
+**WindTerm 是部分开源项目。** 根据上游说明，源码将逐步开放；本仓库目前包含部分协议实现、工具类、界面组件及第三方库，未提供完整应用的源码和根目录构建入口。
+
+### 仓库结构
+
+```text
+WindTermPro/
+├── benchmark/       # 基准测试脚本
+├── images/          # 项目图标、截图等资源
+├── src/
+│   ├── libssh/      # SSH 库及其改进代码
+│   ├── Onigmo/      # 正则表达式库及其改进代码
+│   ├── Pty/         # 伪终端相关实现
+│   ├── Protocols/   # 协议接口与 Telnet 实现
+│   ├── Utility/     # 缓冲区、加密、线程等工具类
+│   ├── Widgets/     # 弹出窗口、滚动条、分隔器等组件
+│   ├── LICENSE      # Apache-2.0 许可证文本
+│   └── README.md    # 已公开组件说明（英文）
+└── README.md        # 中文项目说明
+```
+
+### 已公开组件
+
+- **libssh**：增加 Pageant、外部 Socket 及部分 HMAC 算法支持。
+- **Onigmo**：增加迭代器支持，可对间隙缓冲区或不连续内存块进行匹配。
+- **Pty**：基于 [ptyqt](https://github.com/kafeg/ptyqt) 改进的伪终端实现。
+- **Protocols**：协议接口及 Telnet 协议实现。
+- **Utility**：循环缓冲区、加密工具、智能指针、作用域清理、自旋锁和线程局部存储等。
+- **Widgets**：弹出窗口、支持 64 位范围的滚动条及分隔器组件。
+
+更多细节见 [src/README.md](src/README.md)。使用单独组件时，请结合对应源码、依赖及许可证说明进行集成。
+
+## 性能与基准测试
+
+WindTerm 以高吞吐、低延迟和较低内存占用为设计目标，并提供动态内存压缩机制。
+
+原始 README 中的 SFTP、终端输出、Linux 终端和输入延迟测试主要使用 2020 年前后的软件版本。相关结果受硬件、操作系统、网络、终端配置和回滚行数影响，应作为历史参考，不能直接代表当前版本的表现。
+
+- [本仓库基准测试脚本](benchmark/urandom_test.sh)
+- [上游 README 中的性能资料](https://github.com/kingToolbox/WindTerm#sftp-performance)
+- [上游性能演示](https://kingtoolbox.github.io/2020/01/23/windterm-putty-performance/)
+
+## 文档与快捷键
+
+- [上游介绍与教程](https://kingtoolbox.github.io)
+- [快捷键说明](https://kingtoolbox.github.io/tags/keyboard/)
+- [会话管理](https://kingtoolbox.github.io/2020/01/22/manage-sessions/)
+- [自动补全](https://kingtoolbox.github.io/tags/auto-completion/)
+- [文件传输](https://kingtoolbox.github.io/tags/transfer/)
+- [tmux 集成](https://kingtoolbox.github.io/2025/01/05/tmux-integration/)
+
+## 问题反馈与交流
+
+欢迎反馈问题、提出功能建议或改进文档。
+
+- 本仓库的修改与文档建议：通过 [Pull Request](https://github.com/aa24615/WindTermPro/pulls) 提交。
+- 上游 WindTerm 的使用问题与功能请求：访问 [Issues](https://github.com/kingToolbox/WindTerm/issues)。
+- SSH、SFTP、Shell、Telnet、串口和 WindTerm 相关讨论：访问 [Discussions](https://github.com/kingToolbox/WindTerm/discussions)。
+
+反馈问题时，建议附上操作系统、WindTerm 版本、连接类型、复现步骤，以及脱敏后的日志或截图，便于定位。
+
+## 开发计划
+
+原始 README 包含 v2.7 及后续版本的历史规划，涉及命令片段、会话搜索、外部工具、更多协议、脚本、宏和插件等方向。**历史规划不代表当前已实现功能或本仓库的交付承诺。**
+
+当前发布内容与开发进展请参考[上游发行说明](https://github.com/kingToolbox/WindTerm/releases)及[上游项目](https://github.com/kingToolbox/WindTerm)。
+
+## 许可证
+
+根据上游项目说明，WindTerm 可免费用于商业和非商业用途；已发布源码（第三方目录除外）采用 Apache-2.0 许可证。
+
+许可证全文见 [src/LICENSE](src/LICENSE)。第三方组件请遵循各自随附的许可证。
+
+## 致谢
+
+感谢 [kingToolbox](https://github.com/kingToolbox) 及所有为 WindTerm 开发、翻译和改进作出贡献的参与者。
+
+原始 README 致谢的翻译贡献者包括：
+
+- [EvoWebFrance](https://github.com/EvoWebFrance)：法语翻译。
+- [kvnklk](https://github.com/kvnklk)：德语翻译。
+- [Lemonawa](https://github.com/Lemonawa)：简体中文翻译。
+- [LuxNegra](https://github.com/LuxNegra)：法语翻译。
+- [MosamXu](https://github.com/MosamXu)：简体中文翻译。
+
+如果你也需要高性能文本编辑器，可以了解同一作者的 [WindEdit](https://github.com/kingToolbox/WindEdit)。
